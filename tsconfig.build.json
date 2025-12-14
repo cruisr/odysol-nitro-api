@@ -5,8 +5,8 @@
   "compilerOptions": {
     "rootDir": "./dist/src",
     "paths": {
-      "nitro-api/*": ["./dist/src/*"],
-      "nitro-api": ["./dist/src/index.ts"]
+      "odysol-nitro-ts/*": ["./dist/src/*"],
+      "odysol-nitro-ts": ["./dist/src/index.ts"]
     },
     "noEmit": false,
     "declaration": true,

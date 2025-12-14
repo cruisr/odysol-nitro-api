@@ -8,8 +8,8 @@
     "moduleResolution": "node",
     "esModuleInterop": true,
     "paths": {
-      "nitro-api/*": ["./src/*"],
-      "nitro-api": ["./src/index.ts"]
+      "odysol-nitro-ts/*": ["./src/*"],
+      "odysol-nitro-ts": ["./src/index.ts"]
     },
     "noEmit": true,
 

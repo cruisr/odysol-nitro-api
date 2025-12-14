@@ -7,8 +7,8 @@ const config: JestConfigWithTsJest = {
     '^.+\\.(t|j)sx?$': ['@swc/jest', { sourceMaps: 'inline' }],
   },
   moduleNameMapper: {
-    '^nitro-api$': '<rootDir>/src/index.ts',
-    '^nitro-api/(.*)$': '<rootDir>/src/$1',
+    '^odysol-nitro-ts$': '<rootDir>/src/index.ts',
+    '^odysol-nitro-ts/(.*)$': '<rootDir>/src/$1',
   },
   modulePathIgnorePatterns: [
     '<rootDir>/ecosystem-tests/',
