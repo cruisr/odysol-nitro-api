@@ -1,6 +1,6 @@
 // File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
-import NitroAPI from 'odysol-nitro-ts';
+import NitroAPI from '@cruisr/nitro-ts';
 
 const client = new NitroAPI({
   username: 'My Username',

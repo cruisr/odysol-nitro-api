@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.0.1 (2025-12-14)
+
+Full Changelog: [v1.0.0...v1.0.1](https://github.com/cruisr/odysol-nitro-api/compare/v1.0.0...v1.0.1)
+
+### Chores
+
+* update SDK settings ([313670b](https://github.com/cruisr/odysol-nitro-api/commit/313670bfbbd8e6a26110aaea345664116ac26fb7))
+
 ## 1.0.0 (2025-12-14)
 
 Full Changelog: [v0.0.1...v1.0.0](https://github.com/cruisr/odysol-nitro-api/compare/v0.0.1...v1.0.0)

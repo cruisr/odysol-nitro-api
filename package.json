@@ -1,6 +1,6 @@
 {
-  "name": "odysol-nitro-ts",
-  "version": "1.0.0",
+  "name": "@cruisr/nitro-ts",
+  "version": "1.0.1",
   "description": "The official TypeScript library for the Nitro API API",
   "author": "Nitro API <>",
   "types": "dist/index.d.ts",
