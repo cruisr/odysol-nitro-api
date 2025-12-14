@@ -1,0 +1,4 @@
+configured_endpoints: 42
+openapi_spec_url: https://storage.googleapis.com/stainless-sdk-openapi-specs/cruisr%2Fnitro-api-c5c6c800f02b3bc7f380f2c48153553cfcceb4716b95245e6dec13ca9bf6de94.yml
+openapi_spec_hash: e649bc7a6584a74c836a0d4ce4056c22
+config_hash: 18e6c378c9d95b68940b3b2cd589f2b3
