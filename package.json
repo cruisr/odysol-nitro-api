@@ -1,6 +1,6 @@
 {
   "name": "nitro-api",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "The official TypeScript library for the Nitro API API",
   "author": "Nitro API <>",
   "types": "dist/index.d.ts",
