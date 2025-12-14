@@ -5,8 +5,8 @@
   "compilerOptions": {
     "rootDir": "./dist/src",
     "paths": {
-      "odysol-nitro-ts/*": ["./dist/src/*"],
-      "odysol-nitro-ts": ["./dist/src/index.ts"]
+      "@cruisr/nitro-ts/*": ["./dist/src/*"],
+      "@cruisr/nitro-ts": ["./dist/src/index.ts"]
     },
     "noEmit": false,
     "declaration": true,

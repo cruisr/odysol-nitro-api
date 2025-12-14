@@ -25,7 +25,7 @@ export default tseslint.config(
         {
           patterns: [
             {
-              regex: '^odysol-nitro-ts(/.*)?',
+              regex: '^@cruisr/nitro-ts(/.*)?',
               message: 'Use a relative import, not a package import.',
             },
           ],

@@ -1,10 +1,10 @@
 // File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
-import { APIPromise } from 'odysol-nitro-ts/core/api-promise';
+import { APIPromise } from '@cruisr/nitro-ts/core/api-promise';
 
 import util from 'node:util';
-import NitroAPI from 'odysol-nitro-ts';
-import { APIUserAbortError } from 'odysol-nitro-ts';
+import NitroAPI from '@cruisr/nitro-ts';
+import { APIUserAbortError } from '@cruisr/nitro-ts';
 const defaultFetch = fetch;
 
 describe('instantiate client', () => {

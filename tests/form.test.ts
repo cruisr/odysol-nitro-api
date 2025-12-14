@@ -1,5 +1,5 @@
-import { multipartFormRequestOptions, createForm } from 'odysol-nitro-ts/internal/uploads';
-import { toFile } from 'odysol-nitro-ts/core/uploads';
+import { multipartFormRequestOptions, createForm } from '@cruisr/nitro-ts/internal/uploads';
+import { toFile } from '@cruisr/nitro-ts/core/uploads';
 
 describe('form data validation', () => {
   test('valid values do not error', async () => {
