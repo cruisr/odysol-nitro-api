@@ -1,6 +1,6 @@
 import fs from 'fs';
-import type { ResponseLike } from 'nitro-api/internal/to-file';
-import { toFile } from 'nitro-api/core/uploads';
+import type { ResponseLike } from 'odysol-nitro-ts/internal/to-file';
+import { toFile } from 'odysol-nitro-ts/core/uploads';
 import { File } from 'node:buffer';
 
 class MyClass {
@@ -97,7 +97,7 @@ describe('missing File error message', () => {
   });
 
   test('is thrown', async () => {
-    const uploads = await import('nitro-api/core/uploads');
+    const uploads = await import('odysol-nitro-ts/core/uploads');
     await expect(
       uploads.toFile(mockResponse({ url: 'https://example.com/my/audio.mp3' })),
     ).rejects.toMatchInlineSnapshot(
