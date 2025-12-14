@@ -55,12 +55,12 @@ $ cd odysol-nitro-api
 # With yarn
 $ yarn link
 $ cd ../my-package
-$ yarn link odysol-nitro-ts
+$ yarn link @cruisr/nitro-ts
 
 # With pnpm
 $ pnpm link --global
 $ cd ../my-package
-$ pnpm link -—global odysol-nitro-ts
+$ pnpm link -—global @cruisr/nitro-ts
 ```
 
 ## Running tests
