@@ -468,34 +468,33 @@ export class Cruise extends APIResource {
    *
    * @example
    * ```ts
-   * const response =
-   *   await client.reservation.cruise.listPackages({
-   *     cruiseReservation: {
-   *       pos: { id: '0', currency: 'USD' },
-   *       cruise: { packageId: 1277420, packageTourId: -1 },
-   *       categories: [
-   *         { code: 'MM', fare: { fareCode: { code: 'NH1' } } },
-   *       ],
-   *       customerReferences: [
-   *         { RPH: '1', isPrimaryContact: true },
-   *         { RPH: '2' },
-   *       ],
-   *     },
-   *     customers: [
-   *       {
-   *         rph: 1,
-   *         age: 52,
-   *         firstName: 'John',
-   *         lastName: 'Doe',
-   *       },
-   *       {
-   *         rph: 2,
-   *         age: 57,
-   *         firstName: 'Maria',
-   *         lastName: 'Doe',
-   *       },
+   * const response = await client.reservation.cruise.listPackages({
+   *   cruiseReservation: {
+   *     pos: { ... },
+   *     cruise: { ... },
+   *     categories: [
+   *       { ... },
    *     ],
-   *   });
+   *     customerReferences: [
+   *       { ... },
+   *       { ... },
+   *     ],
+   *   },
+   *   customers: [
+   *     {
+   *       rph: 1,
+   *       age: 52,
+   *       firstName: 'John',
+   *       lastName: 'Doe',
+   *     },
+   *     {
+   *       rph: 2,
+   *       age: 57,
+   *       firstName: 'Maria',
+   *       lastName: 'Doe',
+   *     },
+   *   ],
+   * });
    * ```
    */
   listPackages(
@@ -612,8 +611,20 @@ export class Cruise extends APIResource {
    *     ],
    *   },
    *   customers: [
-   *     { rph: 1, age: 52, firstName: 'John', lastName: 'Doe', dateOfBirth: '02-Jan-1970' },
-   *     { rph: 2, age: 57, firstName: 'Maria', lastName: 'Doe', dateOfBirth: '01-Jan-1965' },
+   *     {
+   *       rph: 1,
+   *       age: 52,
+   *       firstName: 'John',
+   *       lastName: 'Doe',
+   *       dateOfBirth: '02-Jan-1970',
+   *     },
+   *     {
+   *       rph: 2,
+   *       age: 57,
+   *       firstName: 'Maria',
+   *       lastName: 'Doe',
+   *       dateOfBirth: '01-Jan-1965',
+   *     },
    *   ],
    * });
    * ```
