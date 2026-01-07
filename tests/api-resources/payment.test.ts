@@ -39,8 +39,16 @@ describe('resource payment', () => {
             },
             BankName: 'HSBC',
             ContactInfo: {
-              Phone1: { CountryCode: '1', Number: '123-456-7890', Type: 'Billing' },
-              Phone2: { CountryCode: '1', Number: '123-456-7890', Type: 'Bank' },
+              Phone1: {
+                CountryCode: '1',
+                Number: '123-456-7890',
+                Type: 'Billing',
+              },
+              Phone2: {
+                CountryCode: '1',
+                Number: '123-456-7890',
+                Type: 'Bank',
+              },
             },
           },
           cardHolderName: 'John Doe',

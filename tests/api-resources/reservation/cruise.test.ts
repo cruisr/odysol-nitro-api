@@ -29,23 +29,41 @@ describe('resource cruise', () => {
         {
           cruiseReservation: {
             categories: [
-              { cabins: [{ number: '18104' }], code: 'H6', fare: { farecode: { code: 'DISC50' } }, type: 4 },
+              {
+                cabins: [{ number: '18104' }],
+                code: 'H6',
+                fare: { farecode: { code: 'DISC50' } },
+                type: 4,
+              },
             ],
             cruise: { packageId: 1330418, packageTourId: -1 },
-            CruiselineAir: { GateWayCity: { id: 'MIA' }, type: 'RoundTrip' },
+            CruiselineAir: {
+              GateWayCity: { id: 'MIA' },
+              type: 'RoundTrip',
+            },
             customerReferences: [
               { isPrimaryContact: true, rph: 1 },
               { isPrimaryContact: true, rph: 2 },
             ],
             pos: { currency: 'USD' },
             supplierCommunicationInfo: {
-              agency: { email: 'john@domain.com', phone1: { countryCode: '1', number: '1234567890' } },
-              agent: { email: 'john@domain.com', phone1: { countryCode: '1', number: '1234567890' } },
+              agency: {
+                email: 'john@domain.com',
+                phone1: { countryCode: '1', number: '1234567890' },
+              },
+              agent: {
+                email: 'john@domain.com',
+                phone1: { countryCode: '1', number: '1234567890' },
+              },
             },
           },
           customers: [
             {
-              address: { city: { name: 'MIAMI' }, country: { id: 'US' }, state: { id: 'FL' } },
+              address: {
+                city: { name: 'MIAMI' },
+                country: { id: 'US' },
+                state: { id: 'FL' },
+              },
               age: 35,
               dateOfBirth: '02-Jan-1988',
               firstName: 'John',
@@ -55,7 +73,11 @@ describe('resource cruise', () => {
               title: 'MR',
             },
             {
-              address: { city: { name: 'MIAMI' }, country: { id: 'US' }, state: { id: 'FL' } },
+              address: {
+                city: { name: 'MIAMI' },
+                country: { id: 'US' },
+                state: { id: 'FL' },
+              },
               age: 35,
               dateOfBirth: '01-Jan-1988',
               firstName: 'Jack',
@@ -306,18 +328,30 @@ describe('resource cruise', () => {
         {
           cruiseReservation: {
             categories: [
-              { cabins: [{ number: '9068' }], code: 'IR1', fare: { fareCode: { code: 'EZAT35DZE' } } },
+              {
+                cabins: [{ number: '9068' }],
+                code: 'IR1',
+                fare: { fareCode: { code: 'EZAT35DZE' } },
+              },
             ],
             cruise: { packageId: 1324816 },
             customerReferences: [
               { isPrimaryContact: true, rph: 1 },
               { isPrimaryContact: true, rph: 2 },
             ],
-            pos: { id: 1, currency: 'USD', type: 'B2C' },
+            pos: {
+              id: 1,
+              currency: 'USD',
+              type: 'B2C',
+            },
           },
           customers: [
             {
-              address: { city: { id: 'MIA' }, country: { id: 'US' }, state: { id: 'FL' } },
+              address: {
+                city: { id: 'MIA' },
+                country: { id: 'US' },
+                state: { id: 'FL' },
+              },
               age: 52,
               dateOfBirth: '02-Jan-1970',
               firstName: 'John',
@@ -325,7 +359,11 @@ describe('resource cruise', () => {
               rph: 1,
             },
             {
-              address: { city: { id: 'MIA' }, country: { id: 'US' }, state: { id: 'FL' } },
+              address: {
+                city: { id: 'MIA' },
+                country: { id: 'US' },
+                state: { id: 'FL' },
+              },
               age: 57,
               dateOfBirth: '01-Jan-1965',
               firstName: 'Maria',
@@ -489,7 +527,12 @@ describe('resource cruise', () => {
       client.reservation.cruise.listPackages(
         {
           cruiseReservation: {
-            categories: [{ code: 'MM', fare: { fareCode: { code: 'NH1' } } }],
+            categories: [
+              {
+                code: 'MM',
+                fare: { fareCode: { code: 'NH1' } },
+              },
+            ],
             cruise: { packageId: 1277420, packageTourId: -1 },
             customerReferences: [
               { isPrimaryContact: true, RPH: '1' },
@@ -498,8 +541,18 @@ describe('resource cruise', () => {
             pos: { id: '0', currency: 'USD' },
           },
           customers: [
-            { age: 52, firstName: 'John', lastName: 'Doe', rph: 1 },
-            { age: 57, firstName: 'Maria', lastName: 'Doe', rph: 2 },
+            {
+              age: 52,
+              firstName: 'John',
+              lastName: 'Doe',
+              rph: 1,
+            },
+            {
+              age: 57,
+              firstName: 'Maria',
+              lastName: 'Doe',
+              rph: 2,
+            },
           ],
           SiteItemId: '{{Nitro.Sandbox.SiteItemId}}',
         },
@@ -605,7 +658,12 @@ describe('resource cruise', () => {
       client.reservation.cruise.listTransfers(
         {
           cruiseReservation: {
-            categories: [{ code: '4V', fare: { fareCode: { code: 'I0452040' } } }],
+            categories: [
+              {
+                code: '4V',
+                fare: { fareCode: { code: 'I0452040' } },
+              },
+            ],
             cruise: { packageId: 1269292 },
             customerReferences: [
               { isPrimaryContact: true, RPH: '1' },
@@ -614,8 +672,20 @@ describe('resource cruise', () => {
             pos: { currency: 'USD' },
           },
           customers: [
-            { age: 52, dateOfBirth: '02-Jan-1970', firstName: 'John', lastName: 'Doe', rph: 1 },
-            { age: 57, dateOfBirth: '01-Jan-1965', firstName: 'Maria', lastName: 'Doe', rph: 2 },
+            {
+              age: 52,
+              dateOfBirth: '02-Jan-1970',
+              firstName: 'John',
+              lastName: 'Doe',
+              rph: 1,
+            },
+            {
+              age: 57,
+              dateOfBirth: '01-Jan-1965',
+              firstName: 'Maria',
+              lastName: 'Doe',
+              rph: 2,
+            },
           ],
           SiteItemId: '{{Nitro.Sandbox.SiteItemId}}',
         },
@@ -669,7 +739,10 @@ describe('resource cruise', () => {
       client.reservation.cruise.readFromSupplier(
         {
           id: 72353,
-          cruiseReservation: { id: 120330, readPreferences: { autoSyncOption: 'NOLOCK', mode: 'modify' } },
+          cruiseReservation: {
+            id: 120330,
+            readPreferences: { autoSyncOption: 'NOLOCK', mode: 'modify' },
+          },
           trackingInfo: { token: 'EQTEMPKEN' },
           SiteItemId: '{{Nitro.Sandbox.SiteItemId}}',
         },
