@@ -1195,22 +1195,22 @@ export namespace ReservationReleaseReservationResponse {
 
 export interface ReservationApplyPaymentParams {
   /**
-   * Body param:
+   * Body param
    */
   id?: number;
 
   /**
-   * Body param:
+   * Body param
    */
   cruiseReservation?: ReservationApplyPaymentParams.CruiseReservation;
 
   /**
-   * Body param:
+   * Body param
    */
   paymentToProcess?: ReservationApplyPaymentParams.PaymentToProcess;
 
   /**
-   * Header param:
+   * Header param
    */
   SiteItemId?: string;
 }
@@ -1257,58 +1257,58 @@ export namespace ReservationApplyPaymentParams {
 
 export interface ReservationCancelReservationParams {
   /**
-   * Body param:
+   * Body param
    */
   body?: unknown;
 
   /**
-   * Header param:
+   * Header param
    */
   SiteItemId?: string;
 }
 
 export interface ReservationConfirmReservationParams {
   /**
-   * Body param:
+   * Body param
    */
   body?: unknown;
 
   /**
-   * Header param:
+   * Header param
    */
   SiteItemId?: string;
 }
 
 export interface ReservationReadFromSupplierParams {
   /**
-   * Body param:
+   * Body param
    */
   body?: unknown;
 
   /**
-   * Header param:
+   * Header param
    */
   SiteItemId?: string;
 }
 
 export interface ReservationReadReservationParams {
   /**
-   * Body param:
+   * Body param
    */
   id?: number;
 
   /**
-   * Body param:
+   * Body param
    */
   cruiseReservation?: ReservationReadReservationParams.CruiseReservation;
 
   /**
-   * Body param:
+   * Body param
    */
   trackingInfo?: ReservationReadReservationParams.TrackingInfo;
 
   /**
-   * Header param:
+   * Header param
    */
   SiteItemId?: string;
 }
@@ -1325,12 +1325,12 @@ export namespace ReservationReadReservationParams {
 
 export interface ReservationReleaseReservationParams {
   /**
-   * Body param:
+   * Body param
    */
   body?: unknown;
 
   /**
-   * Header param:
+   * Header param
    */
   SiteItemId?: string;
 }
