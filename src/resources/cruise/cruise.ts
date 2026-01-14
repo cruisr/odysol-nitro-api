@@ -309,12 +309,12 @@ export namespace CruiseGetFacetsResponse {
 
 export interface CruiseCreateParams {
   /**
-   * Body param:
+   * Body param
    */
   filters?: Array<CruiseCreateParams.Filter>;
 
   /**
-   * Header param:
+   * Header param
    */
   SiteItemId?: string;
 }
@@ -329,12 +329,12 @@ export namespace CruiseCreateParams {
 
 export interface CruiseGetFacetsParams {
   /**
-   * Body param:
+   * Body param
    */
   body?: unknown;
 
   /**
-   * Header param:
+   * Header param
    */
   SiteItemId?: string;
 }
