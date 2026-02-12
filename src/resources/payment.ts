@@ -57,42 +57,42 @@ export namespace PaymentTokenizeCardResponse {
 
 export interface PaymentTokenizeCardParams {
   /**
-   * Body param:
+   * Body param
    */
   amount?: number;
 
   /**
-   * Body param:
+   * Body param
    */
   BillingDetails?: PaymentTokenizeCardParams.BillingDetails;
 
   /**
-   * Body param:
+   * Body param
    */
   cardHolderName?: string;
 
   /**
-   * Body param:
+   * Body param
    */
   currency?: string;
 
   /**
-   * Body param:
+   * Body param
    */
   expiration?: string;
 
   /**
-   * Body param:
+   * Body param
    */
   Number?: string;
 
   /**
-   * Body param:
+   * Body param
    */
   type?: string;
 
   /**
-   * Header param:
+   * Header param
    */
   SiteItemId?: string;
 }

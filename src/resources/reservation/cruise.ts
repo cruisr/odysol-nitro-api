@@ -468,34 +468,33 @@ export class Cruise extends APIResource {
    *
    * @example
    * ```ts
-   * const response =
-   *   await client.reservation.cruise.listPackages({
-   *     cruiseReservation: {
-   *       pos: { id: '0', currency: 'USD' },
-   *       cruise: { packageId: 1277420, packageTourId: -1 },
-   *       categories: [
-   *         { code: 'MM', fare: { fareCode: { code: 'NH1' } } },
-   *       ],
-   *       customerReferences: [
-   *         { RPH: '1', isPrimaryContact: true },
-   *         { RPH: '2' },
-   *       ],
-   *     },
-   *     customers: [
-   *       {
-   *         rph: 1,
-   *         age: 52,
-   *         firstName: 'John',
-   *         lastName: 'Doe',
-   *       },
-   *       {
-   *         rph: 2,
-   *         age: 57,
-   *         firstName: 'Maria',
-   *         lastName: 'Doe',
-   *       },
+   * const response = await client.reservation.cruise.listPackages({
+   *   cruiseReservation: {
+   *     pos: { ... },
+   *     cruise: { ... },
+   *     categories: [
+   *       { ... },
    *     ],
-   *   });
+   *     customerReferences: [
+   *       { ... },
+   *       { ... },
+   *     ],
+   *   },
+   *   customers: [
+   *     {
+   *       rph: 1,
+   *       age: 52,
+   *       firstName: 'John',
+   *       lastName: 'Doe',
+   *     },
+   *     {
+   *       rph: 2,
+   *       age: 57,
+   *       firstName: 'Maria',
+   *       lastName: 'Doe',
+   *     },
+   *   ],
+   * });
    * ```
    */
   listPackages(
@@ -612,8 +611,20 @@ export class Cruise extends APIResource {
    *     ],
    *   },
    *   customers: [
-   *     { rph: 1, age: 52, firstName: 'John', lastName: 'Doe', dateOfBirth: '02-Jan-1970' },
-   *     { rph: 2, age: 57, firstName: 'Maria', lastName: 'Doe', dateOfBirth: '01-Jan-1965' },
+   *     {
+   *       rph: 1,
+   *       age: 52,
+   *       firstName: 'John',
+   *       lastName: 'Doe',
+   *       dateOfBirth: '02-Jan-1970',
+   *     },
+   *     {
+   *       rph: 2,
+   *       age: 57,
+   *       firstName: 'Maria',
+   *       lastName: 'Doe',
+   *       dateOfBirth: '01-Jan-1965',
+   *     },
    *   ],
    * });
    * ```
@@ -3801,22 +3812,22 @@ export namespace CruiseSearchWithSupplierResponse {
 
 export interface CruiseCreateReservationParams {
   /**
-   * Body param:
+   * Body param
    */
   cruiseReservation?: CruiseCreateReservationParams.CruiseReservation;
 
   /**
-   * Body param:
+   * Body param
    */
   customers?: Array<CruiseCreateReservationParams.Customer>;
 
   /**
-   * Body param:
+   * Body param
    */
   trackingInfo?: CruiseCreateReservationParams.TrackingInfo;
 
   /**
-   * Header param:
+   * Header param
    */
   SiteItemId?: string;
 }
@@ -3977,58 +3988,58 @@ export namespace CruiseCreateReservationParams {
 
 export interface CruiseExtendHoldParams {
   /**
-   * Body param:
+   * Body param
    */
   body?: unknown;
 
   /**
-   * Header param:
+   * Header param
    */
   SiteItemId?: string;
 }
 
 export interface CruiseGetCabinDetailsParams {
   /**
-   * Body param:
+   * Body param
    */
   body?: unknown;
 
   /**
-   * Header param:
+   * Header param
    */
   SiteItemId?: string;
 }
 
 export interface CruiseGetFareCodeDetailsParams {
   /**
-   * Body param:
+   * Body param
    */
   body?: unknown;
 
   /**
-   * Header param:
+   * Header param
    */
   SiteItemId?: string;
 }
 
 export interface CruiseGetHistoryParams {
   /**
-   * Body param:
+   * Body param
    */
   id?: number;
 
   /**
-   * Body param:
+   * Body param
    */
   cruiseReservation?: CruiseGetHistoryParams.CruiseReservation;
 
   /**
-   * Body param:
+   * Body param
    */
   trackingInfo?: CruiseGetHistoryParams.TrackingInfo;
 
   /**
-   * Header param:
+   * Header param
    */
   SiteItemId?: string;
 }
@@ -4045,22 +4056,22 @@ export namespace CruiseGetHistoryParams {
 
 export interface CruiseGetHistoryFromSupplierParams {
   /**
-   * Body param:
+   * Body param
    */
   id?: number;
 
   /**
-   * Body param:
+   * Body param
    */
   cruiseReservation?: CruiseGetHistoryFromSupplierParams.CruiseReservation;
 
   /**
-   * Body param:
+   * Body param
    */
   trackingInfo?: CruiseGetHistoryFromSupplierParams.TrackingInfo;
 
   /**
-   * Header param:
+   * Header param
    */
   SiteItemId?: string;
 }
@@ -4077,17 +4088,17 @@ export namespace CruiseGetHistoryFromSupplierParams {
 
 export interface CruiseGetItineraryFromSupplierParams {
   /**
-   * Body param:
+   * Body param
    */
   cruiseReservation?: CruiseGetItineraryFromSupplierParams.CruiseReservation;
 
   /**
-   * Body param:
+   * Body param
    */
   trackingInfo?: CruiseGetItineraryFromSupplierParams.TrackingInfo;
 
   /**
-   * Header param:
+   * Header param
    */
   SiteItemId?: string;
 }
@@ -4110,41 +4121,41 @@ export namespace CruiseGetItineraryFromSupplierParams {
 
 export interface CruiseGetPastPassengerDetailsParams {
   /**
-   * Body param:
+   * Body param
    */
   body?: unknown;
 
   /**
-   * Header param:
+   * Header param
    */
   SiteItemId?: string;
 }
 
 export interface CruiseHoldCabinParams {
   /**
-   * Body param:
+   * Body param
    */
   body?: unknown;
 
   /**
-   * Header param:
+   * Header param
    */
   SiteItemId?: string;
 }
 
 export interface CruiseListAddonsParams {
   /**
-   * Body param:
+   * Body param
    */
   cruiseReservation?: CruiseListAddonsParams.CruiseReservation;
 
   /**
-   * Body param:
+   * Body param
    */
   customers?: Array<CruiseListAddonsParams.Customer>;
 
   /**
-   * Header param:
+   * Header param
    */
   SiteItemId?: string;
 }
@@ -4245,77 +4256,77 @@ export namespace CruiseListAddonsParams {
 
 export interface CruiseListAirGatewaysParams {
   /**
-   * Body param:
+   * Body param
    */
   body?: unknown;
 
   /**
-   * Header param:
+   * Header param
    */
   SiteItemId?: string;
 }
 
 export interface CruiseListCabinsParams {
   /**
-   * Body param:
+   * Body param
    */
   body?: unknown;
 
   /**
-   * Header param:
+   * Header param
    */
   SiteItemId?: string;
 }
 
 export interface CruiseListCategoriesParams {
   /**
-   * Body param:
+   * Body param
    */
   body?: unknown;
 
   /**
-   * Header param:
+   * Header param
    */
   SiteItemId?: string;
 }
 
 export interface CruiseListDiningsParams {
   /**
-   * Body param:
+   * Body param
    */
   body?: unknown;
 
   /**
-   * Header param:
+   * Header param
    */
   SiteItemId?: string;
 }
 
 export interface CruiseListFareCodesParams {
   /**
-   * Body param:
+   * Body param
    */
   body?: unknown;
 
   /**
-   * Header param:
+   * Header param
    */
   SiteItemId?: string;
 }
 
 export interface CruiseListPackagesParams {
   /**
-   * Body param:
+   * Body param
    */
   cruiseReservation?: CruiseListPackagesParams.CruiseReservation;
 
   /**
-   * Body param:
+   * Body param
    */
   customers?: Array<CruiseListPackagesParams.Customer>;
 
   /**
-   * Header param:
+   * Header param
    */
   SiteItemId?: string;
 }
@@ -4382,53 +4393,53 @@ export namespace CruiseListPackagesParams {
 
 export interface CruiseListPosParams {
   /**
-   * Body param:
+   * Body param
    */
   body?: unknown;
 
   /**
-   * Header param:
+   * Header param
    */
   SiteItemId?: string;
 }
 
 export interface CruiseListPricesParams {
   /**
-   * Body param:
+   * Body param
    */
   body?: unknown;
 
   /**
-   * Header param:
+   * Header param
    */
   SiteItemId?: string;
 }
 
 export interface CruiseListSpecialServicesParams {
   /**
-   * Body param:
+   * Body param
    */
   body?: unknown;
 
   /**
-   * Header param:
+   * Header param
    */
   SiteItemId?: string;
 }
 
 export interface CruiseListTransfersParams {
   /**
-   * Body param:
+   * Body param
    */
   cruiseReservation?: CruiseListTransfersParams.CruiseReservation;
 
   /**
-   * Body param:
+   * Body param
    */
   customers?: Array<CruiseListTransfersParams.Customer>;
 
   /**
-   * Header param:
+   * Header param
    */
   SiteItemId?: string;
 }
@@ -4493,34 +4504,34 @@ export namespace CruiseListTransfersParams {
 
 export interface CruiseModifyReservationParams {
   /**
-   * Body param:
+   * Body param
    */
   body?: unknown;
 
   /**
-   * Header param:
+   * Header param
    */
   SiteItemId?: string;
 }
 
 export interface CruiseReadFromSupplierParams {
   /**
-   * Body param:
+   * Body param
    */
   id?: number;
 
   /**
-   * Body param:
+   * Body param
    */
   cruiseReservation?: CruiseReadFromSupplierParams.CruiseReservation;
 
   /**
-   * Body param:
+   * Body param
    */
   trackingInfo?: CruiseReadFromSupplierParams.TrackingInfo;
 
   /**
-   * Header param:
+   * Header param
    */
   SiteItemId?: string;
 }
@@ -4547,36 +4558,36 @@ export namespace CruiseReadFromSupplierParams {
 
 export interface CruiseRecordPaymentParams {
   /**
-   * Body param:
+   * Body param
    */
   body?: unknown;
 
   /**
-   * Header param:
+   * Header param
    */
   SiteItemId?: string;
 }
 
 export interface CruiseReleaseCabinParams {
   /**
-   * Body param:
+   * Body param
    */
   body?: unknown;
 
   /**
-   * Header param:
+   * Header param
    */
   SiteItemId?: string;
 }
 
 export interface CruiseSearchPackageWithSupplierParams {
   /**
-   * Body param:
+   * Body param
    */
   filters?: Array<CruiseSearchPackageWithSupplierParams.Filter>;
 
   /**
-   * Header param:
+   * Header param
    */
   SiteItemId?: string;
 }
@@ -4599,62 +4610,62 @@ export namespace CruiseSearchPackageWithSupplierParams {
 
 export interface CruiseSearchReservationParams {
   /**
-   * Body param:
+   * Body param
    */
   agencyConfirmationNumbers?: string;
 
   /**
-   * Body param:
+   * Body param
    */
   bookingStatusIds?: string;
 
   /**
-   * Body param:
+   * Body param
    */
   confirmationNumbers?: string;
 
   /**
-   * Body param:
+   * Body param
    */
   CreatedOn?: CruiseSearchReservationParams.CreatedOn;
 
   /**
-   * Body param:
+   * Body param
    */
   cruiselineIds?: string;
 
   /**
-   * Body param:
+   * Body param
    */
   firstName?: string;
 
   /**
-   * Body param:
+   * Body param
    */
   lastName?: string;
 
   /**
-   * Body param:
+   * Body param
    */
   ModifiedOn?: CruiseSearchReservationParams.ModifiedOn;
 
   /**
-   * Body param:
+   * Body param
    */
   packageId?: number;
 
   /**
-   * Body param:
+   * Body param
    */
   Pagination?: CruiseSearchReservationParams.Pagination;
 
   /**
-   * Body param:
+   * Body param
    */
   TravelDate?: CruiseSearchReservationParams.TravelDate;
 
   /**
-   * Header param:
+   * Header param
    */
   SiteItemId?: string;
 }
@@ -4687,22 +4698,22 @@ export namespace CruiseSearchReservationParams {
 
 export interface CruiseSearchWithSupplierParams {
   /**
-   * Body param:
+   * Body param
    */
   pos?: CruiseSearchWithSupplierParams.Pos;
 
   /**
-   * Body param:
+   * Body param
    */
   SearchPreferences?: CruiseSearchWithSupplierParams.SearchPreferences;
 
   /**
-   * Body param:
+   * Body param
    */
   supplierId?: number;
 
   /**
-   * Header param:
+   * Header param
    */
   SiteItemId?: string;
 }
